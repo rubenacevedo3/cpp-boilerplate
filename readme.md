@@ -1,6 +1,7 @@
 # C++ Boilerplate
-[![Build Status](https://travis-ci.org/dpiet/cpp-boilerplate.svg?branch=master)](https://travis-ci.org/dpiet/cpp-boilerplate)
-[![Coverage Status](https://coveralls.io/repos/github/dpiet/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/dpiet/cpp-boilerplate?branch=master)
+[![Build Status](https://travis-ci.org/rubenacevedo3/cpp-boilerplate.svg?branch=master)](https://travis-ci.org/rubenacevedo3/cpp-boilerplate)
+[![Coverage Status](https://coveralls.io/repos/github/rubenacevedo3/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/rubenacevedo3/cpp-boilerplate?branch=master)
+
 ---
 
 ## Overview
