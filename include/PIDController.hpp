@@ -1,9 +1,12 @@
-/** @file PIDController.hpp
-* @brief This is the ".hpp" file for the PIDController Class
-*
-* This file will define the methods and attributes of the
-* PIDController Class
-*/
+/** 
+ *@author Ruben Acevedo
+ *@file PIDController.cpp
+ *@brief This is the ".cpp" file for the PIDController Class
+ *@copyright This work is property of Ruben Acevedo
+ *
+ * This file will define the methods and attributes of the
+ * PIDController Class
+ */
 
 #ifndef cpp-boilerplate_include_PIDController_hpp_
 #define cpp-boilerplate_include_PIDController_hpp_
