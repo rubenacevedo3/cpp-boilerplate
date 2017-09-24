@@ -7,16 +7,18 @@
 
 #include <PIDController.hpp>
 
-//! Change Student Grade Function
-	/*!
-	 * This function changes the grade of a particular student to a new grade
-	 *@param a student grade vector double reference
-	 *@param a student number int
-	 *@param a new grade double
-	 *@return does not return anything
-	 */
+//! Compute the PID Controller Function
+/**
+ * This function computes the PID Controller
+ * for velocity in which it takes into account
+ * the desired veloctiy and the atual velocity
+ * and outputs a new velocity
+ *@param a const double reference repersenting the target setpoint velocity
+ *@param a const double reference repersenting the actual veloctiy 
+ *@return a double repersenting the new velocity
+ */
 double PIDController::compute(const double& targetSetPoint, const double& actualVelocity)
 {  
-  auto newVelocity = 6.25; /*!< this velocity has the units of [m/s] */
+	auto newVelocity = 6.25; /*!< this velocity has the units of [m/s] */
 	return newVelocity;
 }
