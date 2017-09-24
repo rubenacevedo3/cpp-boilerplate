@@ -20,14 +20,14 @@ public:
 	//! Compute the PID Controller Function
 	/**
 	 * This function computes the PID Controller
-   * for velocity in which it takes into account
-   * the desired veloctiy and the atual velocity
-   * and outputs a new velocity
-	 *@param a double repersenting the target setpoint velocity
-	 *@param a double repersenting the actual veloctiy 
+   	 * for velocity in which it takes into account
+   	 * the desired veloctiy and the atual velocity
+   	 * and outputs a new velocity
+	 *@param a const double reference repersenting the target setpoint velocity
+	 *@param a const double reference repersenting the actual veloctiy 
 	 *@return a double repersenting the new velocity
 	 */
-	double compute(double targetSetPoint, double actualVelocity);
+	double compute(const double& targetSetPoint, const double& actualVelocity);
 
 	//! Private Attributes
 private:
@@ -38,13 +38,13 @@ private:
 	 */
 	double kp = 0.5;
   
-  //! Ki Value
+  	//! Ki Value
 	/**
 	 * This is the Ki Value for the PID Controller
 	 */
 	double ki = 0.05;
   
-   //! Kd Value
+  	//! Kd Value
 	/**
 	 * This is the Kd Value for the PID Controller
 	 */
