@@ -20,8 +20,7 @@
  *@param a const double reference repersenting the actual veloctiy 
  *@return a double repersenting the new velocity
  */
-double PIDController::compute(double targetSetPoint, double actualVelocity)
-{  
-	auto newVelocity = 6.25; /*!< this velocity has the units of [m/s] */
-	return newVelocity;
+double PIDController::compute(double targetSetPoint, double actualVelocity) {
+    auto newVelocity = 6.25; /*!< this velocity has the units of [m/s] */
+    return newVelocity;
 }
