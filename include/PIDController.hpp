@@ -16,11 +16,9 @@
  * This class is a PID Controller for velocity.
  */
 class PIDController {
-
-	//! Public Methods
-public:
-
-	//! Compute the PID Controller Function
+    //! Public Methods
+ public:
+    //! Compute the PID Controller Function
 	/**
 	 * This function computes the PID Controller
    	 * for velocity in which it takes into account
@@ -30,28 +28,25 @@ public:
 	 *@param a const double reference repersenting the actual veloctiy 
 	 *@return a double repersenting the new velocity
 	 */
-	double compute(double targetSetPoint, double actualVelocity);
+    double compute(double targetSetPoint, double actualVelocity);
 
-	//! Private Attributes
-private:
-
-	//! Kp Value
+    //! Private Attributes
+ private:
+    //! Kp Value
 	/**
 	 * This is the Kp Value for the PID Controller
 	 */
-	double kp = 0.5;
-  
-  	//! Ki Value
-	/**
-	 * This is the Ki Value for the PID Controller
+    double kp = 0.5;
+    //! Ki Value
+    /**
+     * This is the Ki Value for the PID Controller
 	 */
-	double ki = 0.05;
-  
-  	//! Kd Value
-	/**
-	 * This is the Kd Value for the PID Controller
+    double ki = 0.05;
+    //! Kd Value
+    /**
+     * This is the Kd Value for the PID Controller
 	 */
-	double kd = 1.0;
+    double kd = 1.0;
 };
 
-#endif //cpp-boilerplate_include_PIDController_hpp_
+#endif  // cpp-boilerplate_include_PIDController_hpp_
