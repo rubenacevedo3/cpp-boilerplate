@@ -11,36 +11,32 @@
 #include "../include/PIDController.hpp"
 #include "../app/PIDController.cpp"
 
-TEST (PIDControllerTest, Test1)
-{
-	PIDController pid;
-	double targetSetPoint = 25.5;
-	double actualVelocity = 6.25;
+TEST(PIDControllerTest, Test1) {
+    PIDController pid;
+    auto targetSetPoint = 25.5;
+    auto actualVelocity = 6.25;
 
-	EXPECT_TRUE(pid.compute(targetSetPoint, actualVelocity)!= actualVelocity); /*!< this tests to make sure my code has been changed
-	 	 	 	 	 	 	 	 	 	 	                                                        * and compute returns another value other than the actual
-	 	 	 	 	 	 	 	 	 	                                                          * velocity it was inputed
-	 	 	 	 	 	 	 	 	 	 	                                                        */
+	/** this tests to make sure my code has been changed
+	 * and compute returns another value other than the actual
+     * velocity it was inputed
+	 */
+    EXPECT_TRUE(pid.compute(targetSetPoint, actualVelocity)!= actualVelocity);
 }
 
-TEST (PIDControllerTest, Test2)
-{
-	PIDController pid;
-	double targetSetPoint = 25.5;
-	double actualVelocity = 6.25;
-	int i = 0;
-	double velocity;
-	while (i < 300)
-	{
-		velocity = pid.compute(targetSetPoint,velocity);
-		i++;
-	}
+TEST(PIDControllerTest, Test2) {
+  PIDController pid;
+  auto targetSetPoint = 25.5;
+  int i = 0;
+  auto velocity = 6.25;
+  while (i < 300) {
+    velocity = pid.compute(targetSetPoint, velocity);
+    i++;
+  }
 
-	EXPECT_NEAR(velocity,targetSetPoint, 5); /*!< this tests to make sure that pid controller gets to the
-	 	 	                                      * target velocity in under 300 iterations with an error of +- 5.
-	 	 	                                      * Note: the compute method should return targetSetPoint if it = to
-	 	 	                                      * the actual velocity.
-	 	 	                                      */
-
-
+	/** this tests to make sure that pid controller gets to the
+     * target velocity in under 300 iterations with an error of +- 5.
+     * Note: the compute method should return targetSetPoint if it = to
+     * the actual velocity.
+     */
+  EXPECT_NEAR(velocity, targetSetPoint, 5);
 }
