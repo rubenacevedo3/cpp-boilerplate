@@ -30,7 +30,7 @@ public:
 	 *@param a const double reference repersenting the actual veloctiy 
 	 *@return a double repersenting the new velocity
 	 */
-	double compute(const double& targetSetPoint, const double& actualVelocity);
+	double compute(double targetSetPoint, double actualVelocity);
 
 	//! Private Attributes
 private:
