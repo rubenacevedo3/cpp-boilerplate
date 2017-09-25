@@ -4,11 +4,11 @@
  *@brief This is the ".cpp" file for the PIDController Class
  *@copyright This work is property of Ruben Acevedo
  *
- * This file impliments the methods and attributes of the
+ * This file implements the methods and attributes of the
  * PIDController Class
  */
 
-#include <PIDController.hpp>
+#include "../include/PIDController.hpp"
 
 //! Compute the PID Controller Function
 /**
@@ -20,7 +20,7 @@
  *@param a const double reference repersenting the actual veloctiy 
  *@return a double repersenting the new velocity
  */
-double PIDController::compute(const double& targetSetPoint, const double& actualVelocity)
+double PIDController::compute(double targetSetPoint, double actualVelocity)
 {  
 	auto newVelocity = 6.25; /*!< this velocity has the units of [m/s] */
 	return newVelocity;
