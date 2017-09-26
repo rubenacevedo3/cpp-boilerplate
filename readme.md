@@ -125,3 +125,20 @@ perspetive view (or Windows->Perspective->Open Perspective->C/C++).
 - Git
 
     It is possible to manage version control through Eclipse and the git plugin, but it typically requires creating another project. If you're interested in this, try it out yourself and contact me on Canvas.
+
+
+## Notes
+
+1. The CmakeLists.txt did not have all the source files. I have committed that change please review.
+2. main.cpp can have an example implementation of the class.
+3. Good tests.
+
+
+## TODO
+
+1. Delete files that are not part of the implementation: include/lib.hpp test/test/cpp 
+2. Add activity diagram.
+3. Add cpplint and cppcheck results.
+
+
+
