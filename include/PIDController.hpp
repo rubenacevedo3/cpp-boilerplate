@@ -2,7 +2,7 @@
  *@author Ruben Acevedo
  *@file PIDController.cpp
  *@brief This is the ".cpp" file for the PIDController Class
- *@copyright This work is property of Ruben Acevedo
+ *@copyright [2017] Ruben Acevedo
  *
  * This file will define the methods and attributes of the
  * PIDController Class
@@ -18,7 +18,13 @@
 class PIDController {
   //! Public Methods
  public:
+  //! Class Constructor
+  /**
+   * This code constructs the class.
+   * It initializes the kp ki kd error iError dError previousError and dt attributes
+   */
   PIDController();
+
   //! Compute the PID Controller Function
   /**
    * This function computes the PID Controller
@@ -73,7 +79,6 @@ class PIDController {
    * This is the time interval
    */
   double dt;
-
 };
 
 

@@ -1,8 +1,10 @@
-#include <iostream>
+/**
+ * @copyright [2017] Ruben Acevedo
+ */
 #include <lib.hpp>
+#include <iostream>
 
-int main()
-{
+int main() {
     dummy();
     return 0;
 }

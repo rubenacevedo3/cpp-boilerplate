@@ -2,7 +2,7 @@
  *@author Ruben Acevedo
  *@file PIDController.cpp
  *@brief This is the ".cpp" file for the PIDController Class
- *@copyright This work is property of Ruben Acevedo
+ *@copyright [2017] Ruben Acevedo
  *
  * This file implements the methods and attributes of the
  * PIDController Class
@@ -26,19 +26,15 @@ double PIDController::compute(double targetSetPoint, double actualVelocity) {
   dError = (error - previousError) / dt;
   double cv = (kp * error) + (kd * dError) + (ki * iError * dt);
 
-  auto newVelocity = actualVelocity + cv; /*!< this velocity has the units of [m/s] */
+  auto newVelocity = actualVelocity + cv; /*!< this velocity is in [m/s] */
   previousError = error;
   return newVelocity;
 }
 
+//! Class Constructor
 /**
-
- * @brief Constructor for class PIDController
-
- * initializes various parameters with some default values
-
- *
-
+ * This code constructs the class.
+ * It initializes the kp ki kd error iError dError previousError and dt attributes
  */
 PIDController::PIDController() {
   kp = 0.5;
@@ -49,5 +45,4 @@ PIDController::PIDController() {
   dError = 0;
   previousError = 0;
   dt = .2;
-
 }

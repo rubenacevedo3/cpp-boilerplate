@@ -2,7 +2,7 @@
  *@author Ruben Acevedo
  *@file PIDControllerTest.cpp
  *@brief This is the ".cpp" file for testing the PIDController Class
- *@copyright This work is property of Ruben Acevedo
+ *@copyright [2017] Ruben Acevedo
  *
  * This file tests the PIDController Class using google test
  * PIDController Class
