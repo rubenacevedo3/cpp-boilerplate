@@ -1,6 +1,8 @@
 # C++ Boilerplate
 [![Build Status](https://travis-ci.org/rubenacevedo3/cpp-boilerplate.svg?branch=master)](https://travis-ci.org/rubenacevedo3/cpp-boilerplate)
 [![Coverage Status](https://coveralls.io/repos/github/rubenacevedo3/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/rubenacevedo3/cpp-boilerplate?branch=master)
+
+https://coveralls.io/repos/github/rubenacevedo3/cpp-boilerplate/badge.svg?branch=master(Coverage Status)!:https://coveralls.io/github/rubenacevedo3/cpp-boilerplate?branch=master
 ---
 
 ## Overview
