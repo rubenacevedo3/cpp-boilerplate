@@ -16,9 +16,9 @@
  * for velocity in which it takes into account
  * the desired veloctiy and the atual velocity
  * and outputs a new velocity
- *@param a const double reference repersenting the target setpoint velocity
- *@param a const double reference repersenting the actual veloctiy 
- *@return a double repersenting the new velocity
+ *@param targetSetPoint a const double reference repersenting the target setpoint velocity
+ *@param actualVelovity a const double reference repersenting the actual veloctiy
+ *@return newVelocity a double repersenting the new velocity
  */
 double PIDController::compute(double targetSetPoint, double actualVelocity) {
   error = targetSetPoint - actualVelocity;
@@ -31,6 +31,15 @@ double PIDController::compute(double targetSetPoint, double actualVelocity) {
   return newVelocity;
 }
 
+/**
+
+ * @brief Constructor for class PID
+
+ * initializes various parameters with some default values
+
+ *
+
+ */
 PIDController::PIDController() {
   kp = 0.5;
   ki = 0.05;
