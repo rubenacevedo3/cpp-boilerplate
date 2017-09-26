@@ -55,7 +55,7 @@ class PIDController {
   double error;
   //! iError Value
   /**
-   * This is the sum of errors over time
+   * This is the sum of errors 
    */
   double iError;
   //! dError Value
