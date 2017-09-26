@@ -33,7 +33,7 @@ double PIDController::compute(double targetSetPoint, double actualVelocity) {
 
 /**
 
- * @brief Constructor for class PID
+ * @brief Constructor for class PIDController
 
  * initializes various parameters with some default values
 
