@@ -18,6 +18,7 @@
 class PIDController {
     //! Public Methods
  public:
+  PIDController();
     //! Compute the PID Controller Function
 	/**
 	 * This function computes the PID Controller
@@ -47,6 +48,14 @@ class PIDController {
      * This is the Kd Value for the PID Controller
 	 */
     double kd = 1.0;
+  double error;
+  double iError;
+  double dError;
+  double previousError;
+  double dt;
+
 };
+
+
 
 #endif  // cpp-boilerplate_include_PIDController_hpp_

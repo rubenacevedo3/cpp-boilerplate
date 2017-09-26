@@ -21,6 +21,24 @@
  *@return a double repersenting the new velocity
  */
 double PIDController::compute(double targetSetPoint, double actualVelocity) {
-    auto newVelocity = 6.25; /*!< this velocity has the units of [m/s] */
-    return newVelocity;
+  error = targetSetPoint - actualVelocity;
+  iError += error;
+  dError = (error - previousError) / dt;
+  double cv = (kp * error) + (kd * dError) + (ki * iError * dt);
+
+  auto newVelocity = actualVelocity + cv; /*!< this velocity has the units of [m/s] */
+  previousError = error;
+  return newVelocity;
+}
+
+PIDController::PIDController() {
+  kp = 0.5;
+  ki = 0.05;
+  kd = 0.1;
+  error = 0;
+  iError = 0;
+  dError = 0;
+  previousError = 0;
+  dt = .2;
+
 }
